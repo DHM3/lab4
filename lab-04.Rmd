@@ -1,0 +1,119 @@
+---
+title: "Lab 04 - Nobel laureates"
+date: "`r Sys.Date()`"
+output: pdf_document
+  
+---
+Team Name:
+
+Team Members - Name and Student ID
+
+1.
+
+2.
+
+3.
+
+4.
+
+5.
+
+
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(eval = TRUE)
+```
+
+**All team members**
+
+## Packages
+Load tidyverse below
+
+```{r install_n_load-packages, message = FALSE}
+
+```
+
+## Data
+
+The dataset for this lab can be found as a CSv (comma separated values) file in the `data` folder of your repository.
+
+```{r load-data, message = FALSE}
+
+```
+
+## Get to know your data
+
+**Role 2: second team member**
+
+1.  How many observations and how many variables are in the dataset? Use inline code to answer this question. What does each row represent?
+
+
+```{r}
+
+```
+
+Knit, *commit, and push your changes to GitHub with an appropriate commit message. Make sure to commit and push all changed files so that your Git pane is cleared up afterwards.*
+
+**Role 3: third team member**
+
+2.  Pull the changes. Create a new data frame called `nobel_living` that filters for
+
+-   laureates for whom `country` is available
+-   laureates who are people as opposed to organizations (organizations are denoted with `"org"` as their `gender`)
+-   laureates who are still alive (their `died_date` is `NA`)
+
+```{r}
+
+```
+
+Knit, *commit, and push your changes to GitHub with an appropriate commit message. Make sure to commit and push all changed files so that your Git pane is cleared up afterwards.*
+
+**Role 4: fourth team member**
+
+3. Pull the changes. Confirm that once you have filtered for these characteristics you are left with a data frame with 288 observations, once again using inline code.
+
+```{r}
+
+```
+Knit, *commit, and push your changes to GitHub with an appropriate commit message. Make sure to commit and push all changed files so that your Git pane is cleared up afterwards.*
+
+**Role 5: fifth team member**
+
+4. Pull the changes. "Most living Nobel laureates were based in the US when they won their prizes"
+
+... says the Buzzfeed article.
+Let's see if that's true.
+
+```{r}
+
+```
+
+**Role 1: Group Leader**
+
+5. Pull the changes. Next, we will limit our analysis to only the following categories: Physics, Medicine, Chemistry, and Economics.
+
+```{r}
+
+```
+
+Knit, *commit, and push your changes to GitHub with an appropriate commit message. Make sure to commit and push all changed files so that your Git pane is cleared up afterwards.d*
+
+**Role 1: Group Leader**
+
+6.  Create a faceted bar plot visualizing the relationship between the category of prize and whether the laureate was in the US when they won the nobel prize.
+    Interpret your visualization, and say a few words about whether the Buzzfeed headline is supported by the data.
+
+    -   Your visualization should be faceted by category.
+    -   For each facet you should have two bars, one for winners in the US and one for Other.
+    -   Flip the coordinates so the bars are horizontal, not vertical.
+
+```{r}
+
+```
+
+Knit, *commit, and push your changes to GitHub with an appropriate commit message. Make sure to commit and push all changed files so that your Git pane is cleared up afterwards and review the md document on GitHub to make sure you're happy with the final state of your work.*
+
+
+Now go back through your write up to make sure you've answered all questions and all of your R chunks are properly labelled.
+
+Once you decide as a team that you're done with this lab, all members of the team should pull the changes and knit the R Markdown document to confirm that they can reproduce the report.
