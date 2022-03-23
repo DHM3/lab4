@@ -4,19 +4,19 @@ date: "`r Sys.Date()`"
 output: pdf_document
   
 ---
-Team Name:
+Team Name:Group1
 
 Team Members - Name and Student ID
 
-1.
+1.Ali janodi 2192000012
 
-2.
+2.Abdulrahman almutairi 2210001906
 
-3.
+3.abdullah jabber almutairi 2210002119
 
-4.
+4.Nawaf mansour 2210002968
 
-5.
+5.Abdulelah Alzahrani 2210001878
 
 
 
