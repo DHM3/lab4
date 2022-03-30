@@ -4,6 +4,7 @@ date: "`r Sys.Date()`"
 output: pdf_document
   
 ---
+
 Team Name:Group1
 
 Team Members - Name and Student ID
@@ -20,6 +21,7 @@ Team Members - Name and Student ID
 
 
 
+
 ```{r setup, include = FALSE}
 knitr::opts_chunk$set(eval = TRUE)
 ```
@@ -28,6 +30,7 @@ knitr::opts_chunk$set(eval = TRUE)
 
 ## Packages
 Load tidyverse below
+
 
 ```{r install_n_load-packages, message = FALSE}
 install.packages("tidyverse"
@@ -42,7 +45,7 @@ library(tidyverse
 The dataset for this lab can be found as a CSv (comma separated values) file in the `data` folder of your repository.
 
 ```{r load-data, message = FALSE}
-nobel <- read_csv(“data/nobel.csv”)
+nobel <- read_csv("nobel.csv")
 
 ```
 
@@ -54,7 +57,7 @@ nobel <- read_csv(“data/nobel.csv”)
 
 
 ```{r}
-
+dim(nobel)
 ```
 
 Knit, *commit, and push your changes to GitHub with an appropriate commit message. Make sure to commit and push all changed files so that your Git pane is cleared up afterwards.*
