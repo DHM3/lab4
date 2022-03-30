@@ -29,7 +29,7 @@ knitr::opts_chunk$set(eval = TRUE)
 ## Packages
 Load tidyverse below
 
-```{r install_n_load-packages, message = FALSE}
+```{r install_and_load-packages, message = FALSE}
 
 ```
 
