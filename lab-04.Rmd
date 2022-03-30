@@ -30,6 +30,10 @@ knitr::opts_chunk$set(eval = TRUE)
 Load tidyverse below
 
 ```{r install_n_load-packages, message = FALSE}
+install.packages("tidyverse"
+)
+library(tidyverse
+        )
 
 ```
 
@@ -38,6 +42,7 @@ Load tidyverse below
 The dataset for this lab can be found as a CSv (comma separated values) file in the `data` folder of your repository.
 
 ```{r load-data, message = FALSE}
+nobel <- read_csv(“data/nobel.csv”)
 
 ```
 
