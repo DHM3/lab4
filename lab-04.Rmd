@@ -4,6 +4,7 @@ date: "`r Sys.Date()`"
 output: pdf_document
   
 ---
+<<<<<<< HEAD
 Team Name:
 
 Team Members - Name and Student ID
@@ -17,6 +18,21 @@ Team Members - Name and Student ID
 4.
 
 5.
+=======
+Team Name:Group1
+
+Team Members - Name and Student ID
+
+1.Ali janodi 2192000012
+
+2.Abdulrahman almutairi 2210001906
+
+3.abdullah jabber almutairi 2210002119
+
+4.Nawaf mansour 2210002968
+
+5.Abdulelah Alzahrani 2210001878
+>>>>>>> 0c27ed23d1cfb2fd55b315de58135c4e222cf028
 
 
 
@@ -29,7 +45,8 @@ knitr::opts_chunk$set(eval = TRUE)
 ## Packages
 Load tidyverse below
 
-```{r install_and_load-packages, message = FALSE}
+
+```{r install_n_load-packages, message = FALSE}
 
 ```
 
