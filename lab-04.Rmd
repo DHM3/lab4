@@ -4,26 +4,12 @@ date: "`r Sys.Date()`"
 output: pdf_document
   
 ---
-<<<<<<< HEAD
-Team Name:
 
-Team Members - Name and Student ID
-
-1.
-
-2.
-
-3.
-
-4.
-
-5.
-=======
 Team Name:Group1
 
 Team Members - Name and Student ID
 
-1.Ali janodi 2192000012
+1.Ali janodi 2192000012 
 
 2.Abdulrahman almutairi 2210001906
 
@@ -32,7 +18,7 @@ Team Members - Name and Student ID
 4.Nawaf mansour 2210002968
 
 5.Abdulelah Alzahrani 2210001878
->>>>>>> 0c27ed23d1cfb2fd55b315de58135c4e222cf028
+
 
 
 
@@ -47,6 +33,10 @@ Load tidyverse below
 
 
 ```{r install_n_load-packages, message = FALSE}
+install.packages("tidyverse"
+)
+library(tidyverse
+        )
 
 ```
 
@@ -55,6 +45,7 @@ Load tidyverse below
 The dataset for this lab can be found as a CSv (comma separated values) file in the `data` folder of your repository.
 
 ```{r load-data, message = FALSE}
+nobel <- read_csv("nobel.csv")
 
 ```
 
@@ -66,7 +57,7 @@ The dataset for this lab can be found as a CSv (comma separated values) file in 
 
 
 ```{r}
-
+dim(nobel)
 ```
 
 Knit, *commit, and push your changes to GitHub with an appropriate commit message. Make sure to commit and push all changed files so that your Git pane is cleared up afterwards.*
@@ -80,6 +71,11 @@ Knit, *commit, and push your changes to GitHub with an appropriate commit messag
 -   laureates who are still alive (their `died_date` is `NA`)
 
 ```{r}
+nobel_living <- nobel %>%
+  filter(
+    is.na(country),
+    gender != "org",
+    is.na(died_date))
 
 ```
 
@@ -90,7 +86,7 @@ Knit, *commit, and push your changes to GitHub with an appropriate commit messag
 3. Pull the changes. Confirm that once you have filtered for these characteristics you are left with a data frame with 288 observations, once again using inline code.
 
 ```{r}
-
+nrow(nobel_living)
 ```
 Knit, *commit, and push your changes to GitHub with an appropriate commit message. Make sure to commit and push all changed files so that your Git pane is cleared up afterwards.*
 
@@ -120,7 +116,7 @@ Knit, *commit, and push your changes to GitHub with an appropriate commit messag
 6.  Create a faceted bar plot visualizing the relationship between the category of prize and whether the laureate was in the US when they won the nobel prize.
     Interpret your visualization, and say a few words about whether the Buzzfeed headline is supported by the data.
 
-    -   Your visualization should be faceted by category.
+    -   Your visualization should be faceted by category..
     -   For each facet you should have two bars, one for winners in the US and one for Other.
     -   Flip the coordinates so the bars are horizontal, not vertical.
 
