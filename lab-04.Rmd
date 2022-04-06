@@ -109,7 +109,9 @@ nobel_living <- nobel_living %>%
 5. Pull the changes. Next, we will limit our analysis to only the following categories: Physics, Medicine, Chemistry, and Economics.
 
 ```{r}
-
+nobel_living_science <- nobel_living %>%
+  filter(category %in% c("Physics", "Medicline",
+                         "Chemistry", "Economics"))
 ```
 
 Knit, *commit, and push your changes to GitHub with an appropriate commit message. Make sure to commit and push all changed files so that your Git pane is cleared up afterwards.d*
