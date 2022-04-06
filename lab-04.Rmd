@@ -98,7 +98,10 @@ Knit, *commit, and push your changes to GitHub with an appropriate commit messag
 Let's see if that's true.
 
 ```{r}
-
+nobel_living <- nobel_living %>%
+  mutate (
+    country_us = if_else(country == "USA", "USA", "Other")
+  )
 ```
 
 **Role 1: Group Leader**
